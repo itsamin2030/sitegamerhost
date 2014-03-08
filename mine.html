@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>أستضافة جامر هوست</title>
+  <link rel="stylesheet" href="template/css/bs.css" type="text/css" />
+  <link rel="stylesheet" href="template/css/style.css" type="text/css" />
+  <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+  <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+  <link href="jquery.ui.accordion.min.css" rel="stylesheet" type="text/css">
+  <script src="template/js/bootstrap.min.js"></script>
+  <script src="template/js/holder.js"></script>
+  <script src="template/js/blue.js"></script>
+<script src="jQueryAssets/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="jquery-ui-1.9.2.accordion.custom.min.js" type="text/javascript"></script>
+<meta charset="utf-8">
+</head>
+
+<body>
+
+<div class="tophead">
+<div class="row">
+  <div class="col-md-3 col-md-offset-3">
+    <h1 class="etitle pull-right"><font color="#FF0000">Gamer<span style="color: #F60">Host</span></font></h1></div>
+  <div class="col-md-3 col-md-offset-3"><a class="glyphicon glyphicon-envelope btn-lg pull-left" href="mailto:amoni1432@gmail.com"></a></div>
+</div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>سيرفر Minecraft</p>
+<table width="200" border="1">
+  <tr>
+    <th scope="row">5</th>
+    <td>عدد اللاعبين</td>
+  </tr>
+  <tr>
+    <th scope="row">ألمانيا</th>
+    <td>موقع الخادم</td>
+  </tr>
+  <tr>
+    <th scope="row">OGP</th>
+    <td>نوع اللوحة</td>
+  </tr>
+</table>
+<br>
+<iframe src="news/mine.html" frameborder="0" height="250" width="500"></iframe>
+<p>&nbsp;</p>
+<form action="work.php" method="post">
+  <p><span style="text-align: center">
+    <input name="server" type="hidden" id="server" value="mine">
+  </span></p>
+  <p> <span style="text-align: center">
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email">
+  </span></p>
+  <table width="200">
+    <tr>
+      <td>
+        <span style="text-align: center">
+        <label>
+          <input type="radio" name="pay" value="paygol" id="pay_0">
+          باي جول</label>
+      </span></td>
+    </tr>
+    <tr>
+      <td>
+        <span style="text-align: center">
+        <label>
+          <input type="radio" name="pay" value="cashu" id="pay_1">
+          كاشيو</label>
+      </span></td>
+    </tr>
+    <tr>
+      <td>
+        <span style="text-align: center">
+        <label>
+          <input type="radio" name="pay" value="radio" id="pay_2">
+          باي بال</label>
+      </span></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <div id="Accordion1">
+    <h3>paygol</h3>
+    <div>
+      <p>هنا كود باي جول 10 ريال</p>
+      <p>لا تنسى حفظ رمز ( PIN )</p>
+      <p>حتى إن حصل خطأ نتأكد أنك دفعت المال</p>
+      <p>لا يوجد هدايا على هذا الدفع</p>
+    </div>
+    <h3>cashu</h3>
+    <div>
+      <p>هنا كود كاش يو 3 $</p>
+      <p>في الصفحة القادمة سوف تقوم بتأكيد الشراء</p>
+      <p>يوجد أسبوع هدية</p>
+    </div>
+    <h3><a href="#">paypal</a></h3>
+    <div>
+      <p>نتمنى التحويل على هذا الإيميل 3$</p>
+      <p>amoni1432@gmail.com      </p>
+      <p>وسوف يصل مباشر معلومات الحساب على الإيميل المرسل</p>
+      <p>يوجد أسبوع هدية</p>
+    </div>
+  </div>
+  <p>
+    <input name="submit" type="submit" id="submit" formaction="work.php" formmethod="POST" value="أرسل الطلب">
+  </p>
+
+</form>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<script type="text/javascript">
+$(function() {
+	$( "#Accordion1" ).accordion(); 
+});
+</script>
+</body>
+</html>
